@@ -193,6 +193,7 @@ span{
 
 #prjt-sect{
     margin-top: 100px;
+    border: 2px solid white;
 }
 
 .prjt-h1{
@@ -211,13 +212,13 @@ span{
 .prjt-img{
     width: 400px;
     height: 200px;
-    background-image: url(Pmages/furniture.png);
+    background-image: url(Pmages/cake.png);
     background-size: cover;
     background-repeat: no-repeat;
     transition: all 0.5s;
 }
 .prjt-img:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(Pmages/furniture.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(Pmages/cake.png);
     transform: scale(1.1);
 }
 .prjt-p{
@@ -239,13 +240,13 @@ a{
 .prjt-img2{
     width: 400px;
     height: 200px;
-    background-image: url(Pmages/barber.png);
+    background-image: url(Pmages/catering.png);
     background-size: cover;
     background-repeat: no-repeat;
     transition: all 0.5s;
 }
 .prjt-img2:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(Pmages/barber.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(Pmages/catering.png);
     transform: scale(1.1);
 }
 .prjt-p2{
@@ -264,13 +265,13 @@ a{
 .prjt-img3{
     width: 400px;
     height: 200px;
-    background-image: url(Pmages/login.png);
+    background-image: url(Pmages/login\ \(2\).png);
     background-size: cover;
     background-repeat: no-repeat;
     transition: all 0.5s;
 }
 .prjt-img3:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(Pmages/login.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(Pmages/login\ \(2\).png);
     transform: scale(1.1);
 }
 .prjt-p3{
