@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+/* Header section */
+
+header{
+    background-image: url(Pmages/christin-hume-hBuwVLcYTnA-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 670px;
+    
+}
+
+
+/* Navigation Section */
+
+#nav-sect{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 0px 10px 5px lightgray;
+}
+
+.logo-div{
+    width: 40px;
+    height: 35px;
+    border: 2px solid rgb(255, 255, 255);
+    padding-top: 3px;
+    padding-left: 5px;
+    margin-top: 10px;
+    margin-left: 250px;
+}
+.logo{
+    color: white;
+    cursor: pointer;
+}
+
+.nav{
+    margin-top: 15px;
+    margin-right: 400px;
+}
+
+.nav-ul{
+    list-style-type: none;
+}
+
+.nav-li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-a{
+    text-decoration: none;
+    font-size: 20px;
+    color: lightgray;
+    transition: all 0.5s;
+}
+.nav-a:hover{
+    text-shadow: 0px 0px 10px white;
+}
+
+
+.text-div{
+    padding-top: 250px;
+}
+
+.text{
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    line-height: 55px;
+}
+span{
+    color: #48a830;
+}
+
+
+/* About Section */
+
+#abt-sect{
+    display: flex;
+}
+
+.abt-div{
+    margin-top: 100px;
+    display: flex;
+}
+.abt-in-div{
+    margin-left: 100px;
+}
+.abt-in-div2{
+    margin-left: 100px;
+}
+
+.abt-img{
+    width: 450px;
+    height: 500px;
+}
+.abt-h1{
+    font-size: 50px;
+}
+.abt-p{
+    font-size: 18px;
+    color: gray;
+}
+.abt-btn-div{
+    margin-top: 50px;
+}
+.abt-btn{
+    width: 120px;
+    height: 50px;
+    background-color: #48a830;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+}
+.abt-btn2{
+    width: 180px;
+    height: 50px;
+    background-color: gray;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Service Section */
+
+/* #svc-sect{
+    margin-top: 800px;
+} */
+.svc-div{
+    margin-top: 200px;
+}
+.svc-h1{
+    text-align: center;
+    font-size: 50px;
+}
+.svc-div2{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.svc-in-div{
+    width: 350px;
+    height: 300px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.svc-in-div:hover{
+    box-shadow: 0px 0px 10px 5px ;
+}
+.svc-img{
+    margin-left: 125px;
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+}
+.svc-p{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.svc-p2{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    color: gray;
+}
+
+/* Project Section */
+
+#prjt-sect{
+    margin-top: 100px;
+}
+
+.prjt-h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.prjt-in-div2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.cover{
+    overflow: hidden;
+}
+.prjt-img{
+    width: 400px;
+    height: 200px;
+    background-image: url(Pmages/furniture.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+}
+.prjt-img:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(Pmages/furniture.png);
+    transform: scale(1.1);
+}
+.prjt-p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 90px;
+    color: #ff6600;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.prjt-img:hover .prjt-p{
+    opacity: 1;
+}
+a{
+    text-decoration: none;
+}
+
+.prjt-img2{
+    width: 400px;
+    height: 200px;
+    background-image: url(Pmages/barber.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+}
+.prjt-img2:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(Pmages/barber.png);
+    transform: scale(1.1);
+}
+.prjt-p2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 90px;
+    color: #35b956;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.prjt-img2:hover .prjt-p2{
+    opacity: 1;
+}
+
+.prjt-img3{
+    width: 400px;
+    height: 200px;
+    background-image: url(Pmages/login.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+}
+.prjt-img3:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(Pmages/login.png);
+    transform: scale(1.1);
+}
+.prjt-p3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 90px;
+    color: #ffffff;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.prjt-img3:hover .prjt-p3{
+    opacity: 1;
+}
+
+/* Contact Section */
+
+#cnt-sect{
+    margin-top: 200px;
+}
+
+.cnt-h1{
+    font-size: 40px;
+    text-align: center;
+}
+.cnt-div3{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.label{
+    color: gray;
+    font-size: 18px;
+}
+.won{
+    margin-right: 240px;
+}
+.too{
+    margin-top: 10px;
+}
+.tree{
+    margin-top: 10px;
+}
+.input{
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+}
+.one{
+    margin-right: 30px;
+    margin-top: 10px;
+}
+.two{
+    width: 640px;
+}
+#t-area{
+    width: 640px;
+    height: 100px;
+}
+.input:focus{
+    border-bottom: 1px solid #35b956;
+}
+.cnt-btn{
+    width: 200px;
+    height: 50px;
+    background-color: #48a830;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+.cnt-h4{
+    font-size: 24px;
+}
+.cnt-p{
+    font-size: 18px;
+    margin-top: 20px;
+}
+.cnt-a{
+    margin-top: 20px;
+    display: block;
+    color: #48a830;
+    font-size: 16px;
+}
+.cnt-img{
+    width: 15px;
+    height: 15px;
+}
+
+/* footer section */
+
+#ft-sect{
+    margin-top: 100px;
+    padding-top: 50px;
+    background-color: rgb(49, 49, 49);
+}
+.ft-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ft-div2{
+    display: flex;
+}
+.ft-p{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.ft-img-div{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    background-color: gray;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+.ft-img-div:hover{
+    background-color: #48a830;
+    box-shadow: 0px 0px 10px 2px;
+}
+.ft-img1{
+    margin-top: 8px;
+    margin-left: 7px;
+}
+.ft-img2{
+    margin-top: 8px;
+    margin-left: 8px;
+}
+.ft-img3{
+    margin-top: 9px;
+    margin-left: 9px;
+}
+.ft-img4{
+    margin-top: 8px;
+    margin-left: 9px;
+}
+.ft-img5{
+    margin-top: 9px;
+    margin-left: 9px;
+}
+.ft-p2{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
