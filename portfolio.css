@@ -31,11 +31,14 @@ header{
     width: 100%;
     height: 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-color: black;
     position: fixed;
     top: 0;
+    left: 0;
+    z-index: 3;
     box-shadow: 0px 0px 10px 5px lightgray;
+
 }
 
 .logo-div{
@@ -45,7 +48,7 @@ header{
     padding-top: 3px;
     padding-left: 5px;
     margin-top: 10px;
-    margin-left: 250px;
+    margin-right: 150px;
 }
 .logo{
     color: white;
@@ -54,7 +57,7 @@ header{
 
 .nav{
     margin-top: 15px;
-    margin-right: 400px;
+    margin-left: 150px;
 }
 
 .nav-ul{
@@ -95,6 +98,7 @@ span{
 /* About Section */
 
 #abt-sect{
+    width: 100%;
     display: flex;
 }
 
@@ -146,12 +150,11 @@ span{
 
 /* Service Section */
 
-/* #svc-sect{
-    margin-top: 800px;
-} */
-.svc-div{
-    margin-top: 200px;
+#svc-sect{
+    margin-top: 100px;
+    padding-bottom: 50px;
 }
+
 .svc-h1{
     text-align: center;
     font-size: 50px;
@@ -192,104 +195,176 @@ span{
 /* Project Section */
 
 #prjt-sect{
+    width: 100%;
+    height: 500px;
     margin-top: 100px;
-    border: 2px solid white;
+}
+.prjt-div{
+    width: 90%;
+    margin: 0 5%;
+    
+}
+.prjt-div h1{
+    font-size: 40px;
+    text-align: center;
 }
 
-.prjt-h1{
-    text-align: center;
-    font-size: 40px;
+.prjt-div2{
+    width: 90%;
+    margin: 0 5%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
 }
+
+.prjt-div2 a{
+    width: 30%;
+    height: 200px;
+    color: white;
+}
+
+/* First div */
+
+
+
+.prjt-in-div{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    background-color: aqua;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.prjt-in-div::after{
+    content: '';
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 0%;
+    border-radius: 10px;
+    background: linear-gradient(rgba(0,0,0,0.6),#f87f5a);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s;
+}
+.prjt-in-div:hover::after{
+    height: 100%;
+    content: 'Cake Site';
+}
+.prjt-in-div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 1;
+    transition: transform 0.5s;
+}
+.prjt-in-div:hover img{
+    opacity: 0.3;
+    transform: scale(1.1);
+}
+
+
+/* second div */
 
 .prjt-in-div2{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 50px;
-}
-.cover{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    background-color: aqua;
+    position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
-.prjt-img{
-    width: 400px;
-    height: 200px;
-    background-image: url(Pmages/cake.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+.prjt-in-div2::after{
+    content: '';
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 0%;
+    border-radius: 10px;
+    background: linear-gradient(rgba(0,0,0,0.6),#4efca5);
+    position: absolute;
+    left: 0;
+    top: 0;
     transition: all 0.5s;
 }
-.prjt-img:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(Pmages/cake.png);
-    transform: scale(1.1);
+.prjt-in-div2:hover::after{
+    height: 100%;
+    content: 'Catering Site';
 }
-.prjt-p{
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    padding-top: 90px;
-    color: #ff6600;
-    opacity: 0;
-    transition: opacity 1s;
-}
-.prjt-img:hover .prjt-p{
+.prjt-in-div2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
     opacity: 1;
+    transition: transform 0.5s;
 }
-a{
-    text-decoration: none;
+.prjt-in-div2:hover img{
+    opacity: 0.3;
+    transform: scale(1.1);
 }
 
-.prjt-img2{
-    width: 400px;
+/* Third div */
+
+.prjt-in-div3{
+    width: 100%;
     height: 200px;
-    background-image: url(Pmages/catering.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-color: aqua;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.prjt-in-div3::after{
+    content: '';
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 0%;
+    border-radius: 10px;
+    background: linear-gradient(rgba(0,0,0,0.6),#f76492);
+    position: absolute;
+    left: 0;
+    top: 0;
     transition: all 0.5s;
 }
-.prjt-img2:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(Pmages/catering.png);
-    transform: scale(1.1);
+.prjt-in-div3:hover::after{
+    height: 100%;
+    content: 'Portfolio Site';
 }
-.prjt-p2{
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    padding-top: 90px;
-    color: #35b956;
-    opacity: 0;
-    transition: opacity 1s;
-}
-.prjt-img2:hover .prjt-p2{
+.prjt-in-div3 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
     opacity: 1;
+    transition: transform 0.5s;
+}
+.prjt-in-div3:hover img{
+    opacity: 0.3;
+    transform: scale(1.1);
 }
 
-.prjt-img3{
-    width: 400px;
-    height: 200px;
-    background-image: url(Pmages/login\ \(2\).png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: all 0.5s;
-}
-.prjt-img3:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(Pmages/login\ \(2\).png);
-    transform: scale(1.1);
-}
-.prjt-p3{
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    padding-top: 90px;
-    color: #ffffff;
-    opacity: 0;
-    transition: opacity 1s;
-}
-.prjt-img3:hover .prjt-p3{
-    opacity: 1;
-}
+
+
 
 /* Contact Section */
 
 #cnt-sect{
+    width: 100%;
     margin-top: 200px;
 }
 
@@ -372,6 +447,7 @@ a{
 /* footer section */
 
 #ft-sect{
+    width: 100%;
     margin-top: 100px;
     padding-top: 50px;
     background-color: rgb(49, 49, 49);
